@@ -1,7 +1,7 @@
 const apiUrl = "http://localhost:3000/";
 
 async function postData() {
-  const data = { description: "pindakaas kopen", done: false };
+  const data = { description: input.value, done: false };
   try {
     const response = await fetch(apiUrl, {
       method: "POST",
